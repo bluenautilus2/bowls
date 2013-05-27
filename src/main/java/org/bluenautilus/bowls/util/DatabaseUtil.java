@@ -9,6 +9,11 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  */
 public class DatabaseUtil {
 
+   // ConnectionPool pool = new ConnectionPool();
+
+    public void DatabaseUtil(){
+
+    }
 
     private String getConnectString() throws Exception {
         ConfigUtil config = new ConfigUtil();

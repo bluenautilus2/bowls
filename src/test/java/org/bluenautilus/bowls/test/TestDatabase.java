@@ -20,6 +20,7 @@ public class TestDatabase {
 
             connect = DriverManager
                     .getConnection(this.getConnectString());
+            System.out.println(this.getConnectString());
 
             // Statements allow to issue SQL queries to the database
             statement = connect.createStatement();
@@ -30,14 +31,14 @@ public class TestDatabase {
 
             // PreparedStatements can use variables and are more efficient
             preparedStatement = connect
-                    .prepareStatement("INSERT INTO  BOWLS (bowl_id,ingred_id,quantity,quant_id,original_string) VALUES(?,?,?,?,?)");
+                    .prepareStatement("INSERT INTO  BOWLS (ingred_id,quantity,quant_id,original_string) VALUES(?,?,?,?)");
 
             // Parameters start with 1
-            preparedStatement.setString(1, "bid");
-            preparedStatement.setString(2, "iid");
-            preparedStatement.setString(3, "quan");
-            preparedStatement.setString(4, "qid");
-            preparedStatement.setString(5, "the original string");
+
+            preparedStatement.setString(1, "iid");
+            preparedStatement.setString(2, "quan");
+            preparedStatement.setString(3, "qid");
+            preparedStatement.setString(4, "the original string");
 
             preparedStatement.executeUpdate();
 
@@ -48,8 +49,8 @@ public class TestDatabase {
 
             // Remove again the insert comment
             preparedStatement = connect
-                    .prepareStatement("delete from BOWLS where bowl_id=? ; ");
-            preparedStatement.setString(1, "bid");
+                    .prepareStatement("delete from BOWLS where ingred_id=? ; ");
+            preparedStatement.setString(1, "iid");
             preparedStatement.executeUpdate();
 
             resultSet = statement
@@ -83,7 +84,7 @@ public class TestDatabase {
             // also possible to get the columns via the column number
             // which starts at 1
             // e.g. resultSet.getSTring(2);
-            System.out.println(resultSet.getString("bowl_id"));
+            System.out.println(resultSet.getString("id"));
             System.out.println(resultSet.getString("ingred_id"));
             System.out.println(resultSet.getString("quantity"));
             System.out.println(resultSet.getString("quant_id"));
