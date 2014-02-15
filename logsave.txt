@@ -1,0 +1,49 @@
+Jul 23, 2013 9:26:04 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/dragn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Jul 23, 2013 9:26:05 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 23, 2013 9:26:05 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 23, 2013 9:26:05 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1177 ms
+Jul 23, 2013 9:26:05 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 23, 2013 9:26:05 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.39
+Jul 23, 2013 9:26:05 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 23, 2013 9:26:05 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 23, 2013 9:26:05 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 61 ms
+Connected to server
+Jul 23, 2013 9:26:08 PM org.bluenautilus.util.LoggerUtil initialize
+INFO: Logger configured.
+Jul 23, 2013 9:26:08 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.bluenautilus.bowls.servlet
+Jul 23, 2013 9:26:08 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.bluenautilus.bowls.servlet.QuantityServlet
+Jul 23, 2013 9:26:08 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+Jul 23, 2013 9:26:08 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.8 06/24/2011 12:17 PM'
+Jul 23, 2013 9:26:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /usr/local/apache-tomcat-7.0.39/webapps/manager
+Jul 23, 2013 9:38:21 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 23, 2013 9:38:21 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 23, 2013 9:38:21 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 23, 2013 9:38:21 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 23, 2013 9:38:21 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 23, 2013 9:38:21 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 23, 2013 9:38:21 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 23, 2013 9:38:21 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]

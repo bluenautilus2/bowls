@@ -23,4 +23,9 @@
         <url-pattern>/bowls</url-pattern>
     </servlet-mapping>
 
+    <listener>
+        <listener-class>org.bluenautilus.util.InitializationTask</listener-class>
+    </listener>
+
+
 </web-app>

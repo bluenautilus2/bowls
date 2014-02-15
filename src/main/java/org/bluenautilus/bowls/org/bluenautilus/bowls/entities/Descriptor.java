@@ -1,13 +1,13 @@
-package org.bluenautilus.bowls.org.bluenautilus.bowls.beans;
+package org.bluenautilus.bowls.org.bluenautilus.bowls.entities;
 
 /**
  * User: bluenautilus2
  * Date: 5/12/13
- * Time: 8:23 PM
+ * Time: 8:25 PM
  */
-public class QuantityBean {
+public class Descriptor {
 
-     private String id;
+    private Integer id;
     private String name;
 
     public String getName() {
@@ -18,12 +18,11 @@ public class QuantityBean {
         this.name = name;
     }
 
-    public String getId() {
-
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 }

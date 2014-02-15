@@ -1,7 +1,5 @@
 package org.bluenautilus.bowls.recipe;
 
-import org.bluenautilus.bowls.org.bluenautilus.bowls.beans.QuantityBean;
-
 /**
  * User: bluenautilus2
  * Date: 5/12/13
@@ -9,7 +7,7 @@ import org.bluenautilus.bowls.org.bluenautilus.bowls.beans.QuantityBean;
  */
 public class Quantity {
 
-    public void Quantity(QuantityBean bean){
+    public void Quantity(org.bluenautilus.bowls.org.bluenautilus.bowls.entities.Quantity bean){
 
     }
 }

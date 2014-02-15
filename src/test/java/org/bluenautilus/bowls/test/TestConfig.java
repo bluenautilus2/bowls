@@ -2,7 +2,7 @@ package org.bluenautilus.bowls.test;
 
 
 import org.apache.commons.configuration.PropertiesConfiguration;
-import org.bluenautilus.bowls.util.ConfigUtil;
+import org.bluenautilus.util.ConfigUtil;
 import org.junit.Test;
 import org.junit.Assert;
 
