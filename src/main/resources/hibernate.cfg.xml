@@ -13,17 +13,29 @@
 
         <!-- Assume test is the database name -->
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost/test
+            jdbc:mysql://localhost/bowls
         </property>
         <property name="hibernate.connection.username">
-            root
+            bluenautilus2
         </property>
         <property name="hibernate.connection.password">
-            root123
+            redstar3
         </property>
 
-        <!-- List of XML mapping files -->
-        <mapping resource="Employee.hbm.xml"/>
+        <property name="hibernate.c3p0.min_size">
+            5
+        </property>
+        <property name="hibernate.c3p0.max_size">
+            20
+        </property>
+        <property name="hibernate.c3p0.timeout">
+            1800
+        </property>
+        <property name="hibernate.c3p0.max_statements">
+            50
+        </property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
 
     </session-factory>
 </hibernate-configuration>

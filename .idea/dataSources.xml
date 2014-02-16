@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="572212555">
+  <component name="DataSourceManagerImpl" format="xml" hash="3580904248">
     <data-source source="LOCAL" name="Data Source" uuid="2f5a2c8c-e9e7-4766-8e94-596ea852dea5">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
@@ -10,10 +10,18 @@
       <user-password>dfd8dfcfdfcedfd9dfdedfcbdfd8df99</user-password>
       <libraries>
         <library>
-          <url>jar://$PROJECT_DIR$/jdbc_drivers/mysql-connector-java-5.1.18-bin.jar!/</url>
+          <url>file://$PROJECT_DIR$/jdbc_drivers/mysql-connector-java-5.1.29-bin.jar</url>
         </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="7a394fa2-66e8-4cea-95b7-81cd84937619">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost/test</jdbc-url>
+      <user-password>dfd8dfc5dfc5dfdedf9bdf98df99</user-password>
+      <libraries>
         <library>
-          <url>file://$PROJECT_DIR$/jdbc_drivers/mysql-connector-license.txt</url>
+          <url>file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar</url>
         </library>
       </libraries>
     </data-source>

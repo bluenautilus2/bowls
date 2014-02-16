@@ -35,12 +35,13 @@ primary key(id)
 DROP TABLE IF EXISTS `bowl_ingredients`;
 CREATE TABLE bowl_ingredients
 (
-  id mediumint not null AUTO_INCREMENT,
-  bowl_id mediumint not null,
-  ingred_id varchar(16),
-  quantity varchar(16),
-  quant_id varchar(16),
-  original_string varchar(256)
+id mediumint not null AUTO_INCREMENT,
+bowl_id mediumint not null,
+ingred_id varchar(16),
+quantity varchar(16),
+quant_id varchar(16),
+original_string varchar(256),
+primary key(id)
 );
 
 DROP TABLE IF EXISTS `recipes`;
@@ -53,4 +54,6 @@ instructions text,
 notes text,
 primary key(id)
 );
+
+commit
 

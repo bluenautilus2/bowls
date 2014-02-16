@@ -33,7 +33,6 @@ public class ConfigUtil {
 
     public static ConfigUtil getFromContext(ServletContext context){
          return (ConfigUtil)context.getAttribute(ATTRIBUTE_NAME);
-
     }
 
     public PropertiesConfiguration getDBConfig() throws ConfigurationException {
