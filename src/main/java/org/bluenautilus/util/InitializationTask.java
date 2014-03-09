@@ -24,10 +24,10 @@ public class InitializationTask implements ServletContextListener {
             ConfigUtil config = new ConfigUtil();
             context.setAttribute(ConfigUtil.ATTRIBUTE_NAME, config);
 
-            LoggerUtil loggerUtil = new LoggerUtil(context);
+            LoggerUtil loggerUtil = new LoggerUtil();
             loggerUtil.initialize();
 
-            hibernateUtil = new HibernateUtil(context);
+            hibernateUtil = new HibernateUtil();
             hibernateUtil.init();
 
         } catch (Exception ex) {
