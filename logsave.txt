@@ -1,85 +1,57 @@
-Feb 23, 2014 1:30:28 PM org.apache.catalina.core.AprLifecycleListener init
+Mar 08, 2014 10:17:18 PM org.apache.catalina.core.AprLifecycleListener init
 INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/dragn/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
-Feb 23, 2014 1:30:30 PM org.apache.coyote.AbstractProtocol init
+Mar 08, 2014 10:17:19 PM org.apache.coyote.AbstractProtocol init
 INFO: Initializing ProtocolHandler ["http-bio-8080"]
-Feb 23, 2014 1:30:30 PM org.apache.coyote.AbstractProtocol init
+Mar 08, 2014 10:17:19 PM org.apache.coyote.AbstractProtocol init
 INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
-Feb 23, 2014 1:30:30 PM org.apache.catalina.startup.Catalina load
-INFO: Initialization processed in 2798 ms
-Feb 23, 2014 1:30:30 PM org.apache.catalina.core.StandardService startInternal
+Mar 08, 2014 10:17:19 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1256 ms
+Mar 08, 2014 10:17:19 PM org.apache.catalina.core.StandardService startInternal
 INFO: Starting service Catalina
-Feb 23, 2014 1:30:30 PM org.apache.catalina.core.StandardEngine startInternal
+Mar 08, 2014 10:17:19 PM org.apache.catalina.core.StandardEngine startInternal
 INFO: Starting Servlet Engine: Apache Tomcat/7.0.39
-Feb 23, 2014 1:30:30 PM org.apache.coyote.AbstractProtocol start
+Mar 08, 2014 10:17:19 PM org.apache.coyote.AbstractProtocol start
 INFO: Starting ProtocolHandler ["http-bio-8080"]
-Feb 23, 2014 1:30:30 PM org.apache.coyote.AbstractProtocol start
+Mar 08, 2014 10:17:19 PM org.apache.coyote.AbstractProtocol start
 INFO: Starting ProtocolHandler ["ajp-bio-8009"]
-Feb 23, 2014 1:30:30 PM org.apache.catalina.startup.Catalina start
-INFO: Server startup in 183 ms
+Mar 08, 2014 10:17:19 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 77 ms
 Connected to server
-Feb 23, 2014 1:30:37 PM org.bluenautilus.util.LoggerUtil initialize
+Mar 08, 2014 10:17:25 PM org.bluenautilus.util.LoggerUtil initialize
 INFO: Logger configured.
 log4j:WARN No appenders could be found for logger (org.jboss.logging).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Feb 23, 2014 1:30:38 PM com.sun.jersey.api.core.PackagesResourceConfig init
+Mar 08, 2014 10:17:27 PM com.sun.jersey.api.core.PackagesResourceConfig init
 INFO: Scanning for root resource and provider classes in the packages:
   org.bluenautilus.bowls.servlet
-Feb 23, 2014 1:30:39 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+Mar 08, 2014 10:17:27 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
 INFO: Root resource classes found:
   class org.bluenautilus.bowls.servlet.QuantityServlet
-Feb 23, 2014 1:30:39 PM com.sun.jersey.api.core.ScanningResourceConfig init
+Mar 08, 2014 10:17:27 PM com.sun.jersey.api.core.ScanningResourceConfig init
 INFO: No provider classes found.
-Feb 23, 2014 1:30:39 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+Mar 08, 2014 10:17:27 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
 INFO: Initiating Jersey application, version 'Jersey: 1.8 06/24/2011 12:17 PM'
-Feb 23, 2014 1:30:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+Mar 08, 2014 10:17:29 PM org.apache.catalina.startup.HostConfig deployDirectory
 INFO: Deploying web application directory /usr/local/apache-tomcat-7.0.39/webapps/manager
-Feb 28, 2014 8:40:47 AM org.apache.catalina.core.StandardServer await
+Mar 08, 2014 10:19:11 PM org.apache.catalina.core.StandardServer await
 INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-Feb 28, 2014 8:40:47 AM org.apache.coyote.AbstractProtocol pause
+Mar 08, 2014 10:19:11 PM org.apache.coyote.AbstractProtocol pause
 INFO: Pausing ProtocolHandler ["http-bio-8080"]
-Feb 28, 2014 8:40:47 AM org.apache.coyote.AbstractProtocol pause
+Mar 08, 2014 10:19:11 PM org.apache.coyote.AbstractProtocol pause
 INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
-Feb 28, 2014 8:40:47 AM org.apache.catalina.core.StandardService stopInternal
+Mar 08, 2014 10:19:11 PM org.apache.catalina.core.StandardService stopInternal
 INFO: Stopping service Catalina
-Feb 28, 2014 8:40:47 AM org.bluenautilus.util.InitializationTask contextDestroyed
+Mar 08, 2014 10:19:11 PM org.bluenautilus.util.InitializationTask contextDestroyed
 INFO: Shutting down server
-Feb 28, 2014 8:40:47 AM org.bluenautilus.util.InitializationTask contextDestroyed
-SEVERE: barfing on shutdown
-com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Communications link failure during rollback(). Transaction resolution unknown.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
-	at com.mysql.jdbc.Util.getInstance(Util.java:386)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:920)
-	at com.mysql.jdbc.ConnectionImpl.rollback(ConnectionImpl.java:5062)
-	at com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4654)
-	at com.mysql.jdbc.ConnectionImpl.close(ConnectionImpl.java:1630)
-	at org.bluenautilus.util.HibernateUtil.shutDownSessionFactory(HibernateUtil.java:58)
-	at org.bluenautilus.util.InitializationTask.contextDestroyed(InitializationTask.java:44)
-	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4927)
-	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5573)
-	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
-	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
-	at java.lang.Thread.run(Thread.java:722)
-
-Feb 28, 2014 8:40:47 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Mar 08, 2014 10:19:11 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
 SEVERE: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
-Feb 28, 2014 8:40:47 AM org.apache.coyote.AbstractProtocol stop
+Mar 08, 2014 10:19:11 PM org.apache.coyote.AbstractProtocol stop
 INFO: Stopping ProtocolHandler ["http-bio-8080"]
-Feb 28, 2014 8:40:47 AM org.apache.coyote.AbstractProtocol stop
+Mar 08, 2014 10:19:11 PM org.apache.coyote.AbstractProtocol stop
 INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
-Feb 28, 2014 8:40:47 AM org.apache.coyote.AbstractProtocol destroy
+Mar 08, 2014 10:19:11 PM org.apache.coyote.AbstractProtocol destroy
 INFO: Destroying ProtocolHandler ["http-bio-8080"]
-Feb 28, 2014 8:40:47 AM org.apache.coyote.AbstractProtocol destroy
+Mar 08, 2014 10:19:11 PM org.apache.coyote.AbstractProtocol destroy
 INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Disconnected from server
