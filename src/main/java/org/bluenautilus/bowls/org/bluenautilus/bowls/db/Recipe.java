@@ -1,4 +1,4 @@
-package org.bluenautilus.bowls.org.bluenautilus.bowls.entities;
+package org.bluenautilus.bowls.org.bluenautilus.bowls.db;
 
 import java.util.List;
 

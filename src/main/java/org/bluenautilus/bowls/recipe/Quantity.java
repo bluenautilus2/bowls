@@ -7,7 +7,7 @@ package org.bluenautilus.bowls.recipe;
  */
 public class Quantity {
 
-    public void Quantity(org.bluenautilus.bowls.org.bluenautilus.bowls.entities.Quantity bean){
+    public void Quantity(org.bluenautilus.bowls.org.bluenautilus.bowls.db.Quantity bean){
 
     }
 }

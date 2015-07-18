@@ -5,9 +5,5 @@
       <user-name>bluenautilus2</user-name>
       <user-password>dfd8dfcfdfcedfd9dfdedfcbdfd8df99</user-password>
     </data-source>
-    <data-source name="hibernate.cfg.xml" uuid="7a394fa2-66e8-4cea-95b7-81cd84937619">
-      <secret-storage>memory</secret-storage>
-      <user-password>dfd8dfc5dfc5dfdedf9bdf98df99</user-password>
-    </data-source>
   </component>
 </project>

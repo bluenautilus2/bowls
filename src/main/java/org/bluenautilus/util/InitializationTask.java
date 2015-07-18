@@ -15,7 +15,7 @@ import java.util.logging.Level;
  */
 public class InitializationTask implements ServletContextListener {
     static Logger logger = Logger.getLogger(InitializationTask.class.getName());
-    private HibernateUtil hibernateUtil;
+    private DBUtil hibernateUtil;
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
@@ -27,7 +27,7 @@ public class InitializationTask implements ServletContextListener {
             LoggerUtil loggerUtil = new LoggerUtil();
             loggerUtil.initialize();
 
-            hibernateUtil = new HibernateUtil();
+            hibernateUtil = new DBUtil();
             hibernateUtil.init();
 
         } catch (Exception ex) {
@@ -41,7 +41,7 @@ public class InitializationTask implements ServletContextListener {
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
        logger.info("Shutting down server");
         try{
-         hibernateUtil.shutDownSessionFactory();
+            DBUtil.shutdown();
         }catch(Exception e){
             //well, we're shutting down anyways i guess
             logger.log(Level.SEVERE,"barfing on shutdown", e);

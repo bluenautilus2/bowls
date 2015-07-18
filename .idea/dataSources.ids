@@ -2003,7 +2003,4 @@
       <column name="TOTAL_CONNECTIONS" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
     </table>
   </data-source>
-  <data-source name="hibernate.cfg.xml" uuid="7a394fa2-66e8-4cea-95b7-81cd84937619">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
 </component>

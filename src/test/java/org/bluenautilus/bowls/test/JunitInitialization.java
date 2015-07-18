@@ -1,11 +1,8 @@
 package org.bluenautilus.bowls.test;
 
-import org.bluenautilus.util.ConfigUtil;
-import org.bluenautilus.util.HibernateUtil;
+import org.bluenautilus.util.DBUtil;
 import org.bluenautilus.util.LoggerUtil;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -17,7 +14,7 @@ import java.util.logging.Logger;
 public class JunitInitialization {
 
     static Logger logger = Logger.getLogger(JunitInitialization.class.getName());
-    private static HibernateUtil hibernateUtil;
+    private static DBUtil dbUtil;
 
 
     public static void init() {
@@ -26,8 +23,8 @@ public class JunitInitialization {
             LoggerUtil loggerUtil = new LoggerUtil();
             loggerUtil.initialize();
 
-            hibernateUtil = new HibernateUtil();
-            hibernateUtil.init();
+            dbUtil = new DBUtil();
+            dbUtil.init();
 
         } catch (Exception ex) {
             System.out.print(ex.getMessage());
@@ -39,11 +36,11 @@ public class JunitInitialization {
 
     public static void shutdown() {
         logger.info("Shutting down server");
-        try{
-            hibernateUtil.shutDownSessionFactory();
-        }catch(Exception e){
+        try {
+            dbUtil.shutdown();
+        } catch (Exception e) {
             //well, we're shutting down anyways i guess
-            logger.log(Level.SEVERE,"barfing on shutdown", e);
+            logger.log(Level.SEVERE, "barfing on shutdown", e);
         }
     }
 }

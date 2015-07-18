@@ -4,6 +4,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../angularjs-up-and-running" />
     <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file:///usr/local/apache-tomcat-7.0.39/conf" />
   </component>

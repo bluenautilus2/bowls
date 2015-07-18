@@ -25,6 +25,8 @@
         <module name="bowls" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bowls" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
