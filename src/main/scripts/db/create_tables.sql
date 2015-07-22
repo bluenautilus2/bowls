@@ -31,7 +31,8 @@ CREATE TABLE bowl_ingredients
 (
 id mediumint not null AUTO_INCREMENT,
 bowl_id mediumint not null,
-number_amount varchar(16),
+numerator mediumint not null,
+denominator mediumint not null,
 quantity_id varchar(16),
 descriptor varchar(256),
 primary key(id)

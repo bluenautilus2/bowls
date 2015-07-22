@@ -20,7 +20,7 @@
 
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/bowls</url-pattern>
+        <url-pattern>/bowls/*</url-pattern>
     </servlet-mapping>
 
     <listener>

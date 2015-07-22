@@ -1,13 +1,6 @@
-org/bluenautilus/bowls/org/bluenautilus/bowls/entities/Ingredient.class
 org/bluenautilus/bowls/recipe/Id.class
 org/bluenautilus/util/LoggerUtil.class
-org/bluenautilus/bowls/org/bluenautilus/bowls/entities/Quantity.class
-org/bluenautilus/bowls/org/bluenautilus/bowls/entities/Descriptor.class
 org/bluenautilus/util/ConfigUtil.class
 org/bluenautilus/util/InitializationTask.class
-org/bluenautilus/bowls/org/bluenautilus/bowls/entities/Recipe.class
-org/bluenautilus/bowls/org/bluenautilus/bowls/entities/BowlIngredient.class
-org/bluenautilus/bowls/org/bluenautilus/bowls/entities/Bowl.class
 org/bluenautilus/bowls/recipe/Quantity.class
-org/bluenautilus/util/HibernateUtil.class
 org/bluenautilus/bowls/servlet/QuantityServlet.class

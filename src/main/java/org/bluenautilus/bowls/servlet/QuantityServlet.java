@@ -14,12 +14,11 @@ import javax.ws.rs.core.Response;
 public class QuantityServlet{
 
     @GET
-    public Response getQuantify(@QueryParam(value="id") final String id) {
+    public Response getQuantity(@QueryParam(value="id") final String id) {
 
+        String output = "Jersey say : " + id;
 
-
-        return Response.status(200).entity(id).build();
-
+        return Response.status(200).entity(output).build();
     }
 
     @POST

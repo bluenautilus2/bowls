@@ -17,7 +17,6 @@ public class InitializationTask implements ServletContextListener {
     static Logger logger = Logger.getLogger(InitializationTask.class.getName());
     private DBUtil hibernateUtil;
 
-    @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         try {
             ServletContext context = servletContextEvent.getServletContext();
@@ -37,7 +36,6 @@ public class InitializationTask implements ServletContextListener {
 
     }
 
-    @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
        logger.info("Shutting down server");
         try{
